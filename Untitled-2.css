@@ -1,0 +1,114 @@
+/* Importing the Didot and Proxima Nova fonts */
+@import url('https://fonts.googleapis.com/css2?family=Didot:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;700&display=swap');
+
+/* General body styling */
+body {
+    font-family: 'Didot', serif;
+    background-color: #e4e4e4; /* Background color for the body */
+    color: #343434; /* All text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Form container styling */
+.form-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e4e4e4; /* Background color for form container */
+    border-radius: 8px;
+    text-align: center; /* Center align content in form container */
+}
+
+/* Form title styling */
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #343434; /* Title text color */
+    text-transform: uppercase; /* Title in uppercase */
+}
+
+/* Container for form fields to enable two columns layout */
+.form-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center align form fields */
+}
+
+/* Each form field takes up half the width */
+.form-field {
+    flex: 1 1 calc(50% - 20px); /* Adjust width for two columns */
+    max-width: 300px; /* Set max width for better alignment */
+}
+
+/* Label styling */
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #343434; /* Label text color */
+}
+
+/* Input, textarea, and select styling */
+.form-container input,
+.form-container textarea,
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #343434; /* Text color inside input fields */
+    background-color: #e4e4e4; /* Background color for input fields */
+    border: none; /* Remove default border */
+    border-bottom: 2px solid #ffffff; /* White bottom border line */
+    text-align: center; /* Center text inside input fields */
+}
+
+/* Placeholder styling */
+.form-container input::placeholder,
+.form-container textarea::placeholder,
+.form-container select::placeholder {
+    color: #343434; /* Placeholder text color */
+    font-family: 'Proxima Nova', sans-serif; /* Placeholder font */
+}
+
+/* Button styling */
+.form-container button {
+    background-color: #526E61; /* Button color */
+    color: #ffffff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block; /* Make button inline-block to center it */
+}
+
+.form-container button:hover {
+    background-color: #3e5c4a; /* Darker shade for hover effect */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .form-fields {
+        flex-direction: column;
+        align-items: center; /* Center align form fields on small screens */
+    }
+
+    .form-field {
+        flex: 1 1 100%; /* Full width on small screens */
+        margin-bottom: 15px;
+        max-width: none; /* Remove max-width restriction on small screens */
+    }
+
+    .form-container button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+@charset "UTF-8";
+/* CSS Document */
+
